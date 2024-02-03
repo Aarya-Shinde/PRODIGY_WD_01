@@ -128,21 +128,31 @@
     margin-top: 80px;
     margin: 100px;
     justify-content: space-between;
+    transition: background-color 0.5s;
   }
   .item{
     padding: 20px;
     text-align: center;
     border: 1px solid #ea1538;
-    background-color: beige;
+    background-color: #ea1538;
     width: 300px;
     height: 350px;
     overflow: hidden;
     box-shadow: 5px 10px 30px #ea1538;
-  
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
   }
+
+    .item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ea1538;
+  }
+  
+
   .itemsContainer img{
     height: 200px;
     width: 250px;
+    cursor: auto;
   }
   
   
@@ -198,14 +208,6 @@
     color: white;
     transition: 0.4s;
   }
-  
-
-
-
-
-
-
-
   
   
   /******Footer styling***********/
